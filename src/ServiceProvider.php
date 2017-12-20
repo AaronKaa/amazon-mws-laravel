@@ -22,8 +22,8 @@ class ServiceProvider extends BaseServiceProvider
         $configPath = __DIR__ . '/config/amazon-mws.php';
         $this->mergeConfigFrom($configPath, 'amazon-mws');
 
-        $this->app->alias('AmazonOrderList', 'Sonnenglas\AmazonMws\AmazonOrderList');
-        $this->app->alias('AmazonOrderItemList', 'Sonnenglas\AmazonMws\AmazonOrderItemList');
+        $this->app->alias('AmazonOrderList', 'Aarcarr\AmazonMws\AmazonOrderList');
+        $this->app->alias('AmazonOrderItemList', 'Aarcarr\AmazonMws\AmazonOrderItemList');
     }
 
     public function boot()
